@@ -1,26 +1,43 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main class="main">
+    <TimersList/>
+  </main>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TimersList from "@/components/TimersList";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TimersList
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.main {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: 225px;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    width: 775px;
+  }
 }
 </style>
