@@ -1,5 +1,5 @@
 {
-  "name": "vue-first",
+  "name": "vue-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -23,6 +23,7 @@
   "eslintConfig": {
     "root": true,
     "env": {
+      "vue/setup-compiler-macros": true,
       "node": true
     },
     "extends": [
